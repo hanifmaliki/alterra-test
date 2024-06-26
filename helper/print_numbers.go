@@ -6,13 +6,13 @@ import (
 	"strings"
 )
 
-func PrintNumbers(intSlice []int) {
-	strSlice := make([]string, len(intSlice))
+func PrintIntSlice(numbers []int) {
+	stringSlice := make([]string, len(numbers))
 
-	for i, num := range intSlice {
-		strSlice[i] = strconv.Itoa(num)
+	for i, num := range numbers {
+		stringSlice[i] = strconv.Itoa(num)
 	}
 
-	result := strings.Join(strSlice, ",")
-	fmt.Println(result)
+	joinedString := strings.Join(stringSlice, ",")
+	fmt.Println(joinedString)
 }
