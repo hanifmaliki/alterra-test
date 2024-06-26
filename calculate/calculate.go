@@ -12,7 +12,7 @@ func CalculateCombinations(target, maxSum int) int {
 		numbers[i] = 1
 	}
 	combinations := 1
-	helper.PrintIntSlice(numbers)
+	helper.PrintIntSlice(numbers, target)
 	index := len(numbers) - 1
 
 	for len(numbers) > 1 && index > 0 {
@@ -20,7 +20,7 @@ func CalculateCombinations(target, maxSum int) int {
 			numbers[index-1] += numbers[index]
 			numbers = slices.Delete(numbers, index, index+1)
 			combinations++
-			helper.PrintIntSlice(numbers)
+			helper.PrintIntSlice(numbers, target)
 		}
 		index--
 	}

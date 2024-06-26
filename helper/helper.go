@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func PrintIntSlice(numbers []int) {
+func PrintIntSlice(numbers []int, target int) {
 	stringSlice := make([]string, len(numbers))
 
 	for i, num := range numbers {
@@ -14,5 +14,5 @@ func PrintIntSlice(numbers []int) {
 	}
 
 	joinedString := strings.Join(stringSlice, ",")
-	fmt.Println(joinedString)
+	fmt.Println(joinedString + " = " + strconv.Itoa(target))
 }
