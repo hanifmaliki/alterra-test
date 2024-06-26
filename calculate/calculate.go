@@ -16,7 +16,7 @@ func CalculateCombinations(target, maxSum int) int {
 	index := len(numbers) - 1
 
 	for len(numbers) > 1 && index > 0 {
-		if index > 0 && numbers[index]+numbers[index-1] <= maxSum {
+		if numbers[index]+numbers[index-1] <= maxSum {
 			numbers[index-1] += numbers[index]
 			numbers = slices.Delete(numbers, index, index+1)
 			combinations++
