@@ -1,5 +1,8 @@
 # alterra-test
 
+## Cara run program
+`go run main.go 6 3`
+
 ## Step membuat
 - Membuat fungsi `CalculateCombinations` sendiri, tanpa bantuan apapun, dan sudah berjalan sesuai harapan
 - Copy code ke ChatGPT untuk merapikan variable name & optimize beberapa logic
